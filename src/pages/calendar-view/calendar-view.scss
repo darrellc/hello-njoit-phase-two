@@ -18,6 +18,7 @@ page-calendar-view {
     .calendar-button.forward{
         text-align:right;
     }
+    calendar ion-slides{pointer-events: none;}
     h5{font-size: 1.1em;margin:0;padding-bottom:2em;margin-top:.75em;text-align:center;font-weight:normal;}
     table.table{
         border: none !important;

@@ -1,23 +1,23 @@
 page-calendar {
-
-    h3{margin-top: 1em;margin-bottom: 0;}
+    h3{margin-top: 1em;margin-bottom: 0;}    
     ion-grid ion-row ion-col{
         width: 33.3333333333333%;
+
+        calendar ion-slides{pointer-events: none;}
         h5{font-size: .8em;margin:0;padding-left: 1em;padding-bottom:0;margin-top: 10%;line-height:0;}
         table.table{
             touch-action: none;
             border: none !important;
             th, tbody td{
                 border: none !important;
-                font-size: 40%;
+                font-size: 7px;
                 padding: 0 !important;
                 white-space:no-wrap;
-                overflow:hidden;
-                text-overflow: ellipsis;
+                overflow:hidden;                
                 height: 1vh; 
-                vertical-align: middle !important;               
+                vertical-align: middle !important;                               
             }
-            th{text-transform: uppercase;}
+            th{text-transform: uppercase;padding-top:3px !important;font-size: 8px;white-space: nowrap;}
             tbody td{line-height: 2em !important;font-size: 45%;position:relative;}
             tbody td.monthview-selected{background: transparent !important;color:#000 !important;}   
             tbody td.text-muted{pointer-events: none;opacity: 0 !important;color: #fff !important;}
