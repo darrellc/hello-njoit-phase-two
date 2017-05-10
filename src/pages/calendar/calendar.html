@@ -7,7 +7,7 @@
 <ion-header>
     <ion-navbar>
         <div id="logo">
-            <img src="assets/images/badge.png" />
+            <img src="assets/images/njoit-logo.png" />
         </div>
         <ion-title>
             Hello NJOIT<br /><span class='sub-title'>Welcome Darrell</span>
@@ -17,7 +17,7 @@
 
 
 <ion-content>
-    <div class="overlay" *ngIf="calendars == 0">
+    <div class="overlay" [hidden]="calendars != 0">
         <ion-spinner name="crescent"></ion-spinner>
     </div>
     <h3>2017 State Holidays</h3>

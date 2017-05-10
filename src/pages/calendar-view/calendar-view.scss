@@ -25,7 +25,8 @@ page-calendar-view {
         th, tbody td{
             border: none !important;
             font-size: 100%;
-            padding: 0 !important;            
+            padding: 0 !important; 
+            touch-action: none;           
         }
         th{text-transform: uppercase;font-weight: normal;padding: .5em 0 !important;}
         th small{width:10px;margin:0 auto;overflow:hidden;}
@@ -39,7 +40,7 @@ page-calendar-view {
             width: 3em;
             height: 3em;
             border-radius: 50%;
-            background: #ff0000;
+            background: $holidays;
             z-index: -1;
             position:absolute;
             top:50%;

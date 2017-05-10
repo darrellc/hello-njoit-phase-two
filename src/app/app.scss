@@ -14,27 +14,49 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@import 'colors';
+
 .disabled{
     opacity: .3;
     pointer-events: none;
 }
 
-h3{padding: 0 1em;font-size: 1.2em;margin-bottom: 2em;margin-top:2em;}  
+ion-icon.icon.ion-md-list:before{content: '\f454' !important;}
+
+.ion-page .scroll-content{
+    background: url('../assets/images/OITSeal_xhdpi.png') no-repeat fixed center;
+}
+
+h3{padding: 0 1em;margin-top: 1.3em;margin-bottom: 1em;font-size: 1.3em;color: $darkPurple;font-weight:bold;}  
 
 ion-header{
-    #logo{float:left;width: 2.25em;height:2.25em;}
+    #logo{float:left;width: 3.5em;height:3.5em;}
 
-    .toolbar-background{background: #004ffe;}
+    .toolbar-background{background: $lightPurple;}
     .toolbar-title{
-        color: #ffffff;
-        line-height:.9em;
+        padding-top: .2em;
+        color: $darkPurple;
+        line-height:1em;
+        font-weight:bold;
+        font-size: 2rem;
         .sub-title{
             font-weight: normal;
-            color: #ebebeb;
-            font-size: .8em;
+            font-size: .7em;
+            font-style: italic;
+            color: $darkPurple;
         }
     }
-    button.back-button{color: #fff;}   
+    button.back-button{display: none !important;}   
+}
+
+/*Tabs*/
+ion-tabs a.tab-button{
+    color: #333 !important;
+    ion-icon{color: #333 !important;}
+    opacity: .3;
+}
+ion-tabs a.tab-button[aria-selected="true"]{    
+    opacity: 1;
 }
 
 ion-content{
@@ -56,7 +78,7 @@ ion-content{
             height:4em;
             *{
                 fill: #fff;
-                stroke: #004ffe;
+                stroke: $darkPurple;
             }
         }
     }
