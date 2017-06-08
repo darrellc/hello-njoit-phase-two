@@ -4,7 +4,7 @@ page-calendar {
         width: 33.3333333333333%;
 
         calendar ion-slides{pointer-events: none;}
-        h5{font-size: .8em;margin:0;padding-left: 1em;padding-bottom:0;margin-top: 10%;line-height:0;}
+        h5{font-size: .8em;margin:0;padding-bottom:0;margin-top: 10%;line-height:0;text-align:center;}
         table.table{
             touch-action: none;
             border: none !important;
@@ -17,7 +17,7 @@ page-calendar {
                 height: 1vh; 
                 vertical-align: middle !important;                               
             }
-            th{text-transform: uppercase;padding-top:3px !important;font-size: 8px;white-space: nowrap;}
+            th{text-transform: uppercase;padding-top:7px !important;font-size: 10px;white-space: nowrap;}
             tbody td{line-height: 2em !important;font-size: 45%;position:relative;}
             tbody td.monthview-selected{background: transparent !important;color:#000 !important;}   
             tbody td.text-muted{pointer-events: none;opacity: 0 !important;color: #fff !important;}
